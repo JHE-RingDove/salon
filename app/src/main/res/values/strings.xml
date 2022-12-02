@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">salon</string>
+    <string name="home_name">Салон красоты</string>
+    <string name="button_services">Услуги</string>
+    <string name="button_appointments">Мои записи</string>
+    <string name="button_masters">Мастера</string>
+    <string name="button_profile">Мой профиль</string>
+    <string name="address">г. Орел, ул. М. Горького, д.44</string>
+    <string name="phone">+7 (999) 999-99-99</string>
+    <string name="button_make_appointment">Записаться</string>
+    <string name="my_appointments">Мои записи</string>
+    <string-array name="times">
+        <item>10:00</item>
+        <item>12:00</item>
+        <item>14:00</item>
+        <item>16:00</item>
+        <item>18:00</item>
+    </string-array>
+    <string-array name="master_names">
+        <item>Нелли</item>
+        <item>Алла</item>
+    </string-array>
+    <string-array name="services">
+        <item>Стрижка</item>
+        <item>Укладка волос</item>
+        <item>Окрашивание</item>
+        <item>Маникюр</item>
+        <item>Педикюр</item>
+        <item>Макияж</item>
+        <item>Наращивание ресниц</item>
+        <item>Коррекция бровей</item>
+    </string-array>
+    <string-array name="categories">
+        <item>Волосы</item>
+        <item>Ногти</item>
+        <item>Лицо</item>
+    </string-array>
+</resources>
