@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appointments_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/master_item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/master_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Master_name"
+        android:textColor="@color/text_color"
+        app:layout_constraintBottom_toBottomOf="@+id/master_item_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/master_item_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.179" />
+
+    <TextView
+        android:id="@+id/master_item_job"
+        android:layout_width="77dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:text="Job"
+        android:textColor="@color/text_color"
+        app:layout_constraintBottom_toBottomOf="@+id/master_item_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/master_item_image"
+        app:layout_constraintTop_toBottomOf="@+id/master_item_name"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/master_item_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/text_color"
+        android:text="5.0"
+        app:backgroundTint="@color/background_pink"
+        app:layout_constraintBottom_toBottomOf="@+id/master_item_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/master_item_image"
+        app:layout_constraintTop_toBottomOf="@+id/master_item_job"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/service_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service"
+        android:textColor="@color/text_color"
+        android:textSize="19dp"
+        app:fontFamily="@font/inter_regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.868"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.212" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11.12.2022"
+        android:textColor="@color/text_color"
+        android:textSize="17dp"
+        app:fontFamily="@font/inter_regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/service_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/service_name"
+        app:layout_constraintTop_toBottomOf="@+id/service_name"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <Button
+        android:id="@+id/time"
+        android:layout_width="88dp"
+        android:layout_height="36dp"
+        android:text="00:00"
+        android:textColor="@color/text_color"
+        app:backgroundTint="@color/background_pink"
+        app:cornerRadius="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/date"
+        app:layout_constraintTop_toBottomOf="@+id/date"
+        app:layout_constraintVertical_bias="0.166"
+        app:strokeColor="@color/background_pink"
+        app:strokeWidth="3dp"
+        app:toggleCheckedStateOnClick="false" />
+</androidx.constraintlayout.widget.ConstraintLayout>

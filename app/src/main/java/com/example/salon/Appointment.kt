@@ -2,8 +2,8 @@ package com.example.salon
 
 data class Appointment(
     val Master:Master,
-    val Name:String,
+    val Service:String,
     val Date:String,
-    val Time:Int) {
+    val Time:String) {
 
 }
