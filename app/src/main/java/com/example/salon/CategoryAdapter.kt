@@ -8,6 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 
@@ -50,6 +51,9 @@ class CategoryAdapter(private val names: List<Category>) : RecyclerView
                 Toast.LENGTH_SHORT
             ).show()
             print("------------------------------------")
+//            val recyclerViewMasters: RecyclerView = findViewById(R.id.masters)
+//            recyclerViewMasters.layoutManager = LinearLayoutManager(this)
+//            recyclerViewMasters.adapter = MastersAdapter(getListMasters("asf"))
         }
 
     }

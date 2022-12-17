@@ -49,7 +49,10 @@ class MasterAdapter(private val names: List<Master>) : RecyclerView
                 "click on item: " + names[position],
                 Toast.LENGTH_SHORT
             ).show()
-            CreateAppointment.MASTER = names[position].name
+            CreateAppointment.NAME = names[position].name
+            CreateAppointment.JOB = names[position].job
+            CreateAppointment.RATING = names[position].rating
+
             print("------------------------------------")
         }
 

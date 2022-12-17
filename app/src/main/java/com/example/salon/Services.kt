@@ -1,11 +1,12 @@
 package com.example.salon
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.database.Cursor
 import android.os.Bundle
 import android.view.View
 import android.view.Window
 import android.view.WindowManager
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -29,7 +30,21 @@ class Services : AppCompatActivity() {
         recyclerViewCategories.adapter = CategoryAdapter(getListCategories())
     }
     private fun getListCategories(): List<Category>{
-        val namesList = resources.getStringArray(R.array.categories).toMutableList()
+        val namesList = mutableListOf<String>()
+
+        val mDBHelper = DatabaseHelper(this)
+
+        mDBHelper.updateDataBase()
+        val mDb = mDBHelper.writableDatabase
+        val cursor: Cursor = mDb.rawQuery("SELECT name FROM `category`", null)
+        cursor.moveToFirst()
+
+        while (!cursor.isAfterLast()) {
+            namesList += cursor.getString(0)
+            cursor.moveToNext();
+        }
+        cursor.close();
+
         val categories = mutableListOf<Category>()
         for (name in namesList) {
             categories.add(Category(name, name))
@@ -38,12 +53,29 @@ class Services : AppCompatActivity() {
     }
 
     private fun getListServices(): List<String>{
-        val services = resources.getStringArray(R.array.services).toMutableList()
-        for (str: String in services) {
-            print(str)
+        val services = mutableListOf<String>()
+
+        val mDBHelper = DatabaseHelper(this)
+
+        mDBHelper.updateDataBase()
+        val mDb = mDBHelper.writableDatabase
+        val cursor: Cursor = mDb.rawQuery("SELECT nazvanie FROM `usluga`", null)
+        cursor.moveToFirst()
+
+        while (!cursor.isAfterLast()) {
+            services += cursor.getString(0)
+            cursor.moveToNext();
         }
+        cursor.close();
+
+//        val services = resources.getStringArray(R.array.services).toMutableList()
+//        val services = mutableListOf<Services>()
+//        for (name in namesList) {
+//            services.add(Service(name, name))
+//        }
         return services
     }
+
     fun onClick(v: View) {
         when (v.id) {
             R.id.button_home_bottom -> startActivity(Intent(this, MainActivity::class.java))

@@ -6,7 +6,9 @@
         <entry key="..\:/Users/kuzma/AndroidStudioProjects/salon/app/src/main/res/drawable/rounded_button.xml" value="0.1315" />
         <entry key="..\:/Users/kuzma/AndroidStudioProjects/salon/app/src/main/res/drawable/service_item.xml" value="0.1315" />
         <entry key="..\:/Users/kuzma/AndroidStudioProjects/salon/app/src/main/res/layout/activity_appointments.xml" value="0.22" />
+        <entry key="..\:/Users/kuzma/AndroidStudioProjects/salon/app/src/main/res/layout/activity_comments.xml" value="0.17828131680205217" />
         <entry key="..\:/Users/kuzma/AndroidStudioProjects/salon/app/src/main/res/layout/activity_create_appointment.xml" value="0.17828131680205217" />
+        <entry key="..\:/Users/kuzma/AndroidStudioProjects/salon/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/Users/kuzma/AndroidStudioProjects/salon/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/kuzma/AndroidStudioProjects/salon/app/src/main/res/layout/activity_masters.xml" value="0.17828131680205217" />
         <entry key="..\:/Users/kuzma/AndroidStudioProjects/salon/app/src/main/res/layout/activity_profie.xml" value="0.17828131680205217" />
@@ -15,7 +17,9 @@
         <entry key="..\:/Users/kuzma/AndroidStudioProjects/salon/app/src/main/res/layout/appointment_item.xml" value="0.22" />
         <entry key="..\:/Users/kuzma/AndroidStudioProjects/salon/app/src/main/res/layout/bottom_menu.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/kuzma/AndroidStudioProjects/salon/app/src/main/res/layout/category_item.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/kuzma/AndroidStudioProjects/salon/app/src/main/res/layout/comment.xml" value="0.22" />
         <entry key="..\:/Users/kuzma/AndroidStudioProjects/salon/app/src/main/res/layout/masters_appointments_item.xml" value="0.22" />
+        <entry key="..\:/Users/kuzma/AndroidStudioProjects/salon/app/src/main/res/layout/masters_item.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/kuzma/AndroidStudioProjects/salon/app/src/main/res/layout/service_item.xml" value="0.17828131680205217" />
         <entry key="..\:/Users/kuzma/AndroidStudioProjects/salon/app/src/main/res/layout/time_item.xml" value="0.17828131680205217" />
       </map>
